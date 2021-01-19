@@ -1,8 +1,11 @@
 program main
   !============================================================
+  use const
   use struc
-  use band
-  use output, only: output_hr
+  use edge
+  use utility
+
+! use output, only: output_hr
   !
   implicit none
   !
@@ -52,7 +55,7 @@ program main
 ! 300 format(2F12.6)
   !============================================================
   !
-  call output_hr()
+! call output_hr()
   !============================================================
   open(unit=3,file='bnd.dat',status='replace',iostat=ierror)
 ! open(unit=5,file='bnn.dat',status='replace',iostat=ierror)

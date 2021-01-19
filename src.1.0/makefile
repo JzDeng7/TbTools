@@ -12,8 +12,8 @@ FC = ifort
 
 SUFFIX = .f90
 
-MODULE = const.o struc.o band.o utility.o fermisurf.o test.o
-EXE = test
+MODULE = const.o struc.o edge.o utility.o fermisurf.o test2.o
+EXE = test2
 
 default : $(EXE)
 

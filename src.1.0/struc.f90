@@ -45,7 +45,7 @@ module struc
   !============================================================
   ! Lattice constant
   real(dp), parameter:: lat   = 1.  ! a
-  real(dp), parameter:: scal  = 2.*c_pi/lat
+  real(dp), parameter:: scal  = twopi/lat
   !============================================================
   ! Hopping constant
   integer, parameter:: n_atom = 6
@@ -53,6 +53,7 @@ module struc
   !============================================================
   ! Orbital number
   integer, parameter:: nobt   = 4
+  integer, parameter:: nedge  = 100
   !============================================================
   ! Basis vectors in direct lattice
 ! real(kind = dp), parameter:: a(3, 3) =  &
